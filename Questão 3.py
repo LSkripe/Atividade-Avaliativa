@@ -9,7 +9,7 @@ while True:
         print("Não aceitamos metragem abaixo de 30m² ou maior que 700m² !")
     else:
         print("Será necessários(as) dois(duas) funcionários(as) para a limpeza")
-        print("*" * 10)
+        print("*" * 80)
         break
 
 print("---------------------  Menu 2 de 3 - Tipo ded Limpeza --------------------------")
