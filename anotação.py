@@ -1,14 +1,10 @@
-while True:
-    op = input("Deseja repetir a operação (S/N) ?  ")
+def valida_string(pergunta, min, max):
+        s1 = input(pergunta)
+        tam = len(s1)
+        while ((tam < min) or (tam > max)):
+            s1 = input(pergunta)
+            tam = len(s1)
+        return s1
 
-    if op.upper() == "S":
-        x = 1
-    elif op.upper() == "N":
-        break
-    else:
-        print("opção invalida !")
-
-        if metragem_limpeza < 300:
-            valor_metragem = (metragem_limpeza * tipo) + adicional
-        else:
-            valor_metragem = (metragem_limpeza * tipo) + adicional
+x = valida_string("Digite uma string: ", 10, 30)
+print('Você digitou a string: {}. \n Dados validos. Enecerrando o programa....'.format(x))
